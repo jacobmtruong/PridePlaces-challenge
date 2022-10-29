@@ -5,6 +5,8 @@ const List = (props) => {
 
   return (
     <div>
+      <fieldset>
+        <legend>List</legend>
        {
         list.map((input, i) => {
             return (
@@ -14,6 +16,7 @@ const List = (props) => {
             )       
         })
        }
+        </fieldset>
     </div>
   )
 }

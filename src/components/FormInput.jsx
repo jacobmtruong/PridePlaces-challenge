@@ -19,15 +19,21 @@ const FormInput = () => {
 
   return (
     <>
-      <h1>Please enter your input</h1>
-      <form onSubmit={inputSubmit}>
-        <input type="text" onChange={(e) => setInput(e.target.value)} value={input}/>
-        <button>Add</button>
-      </form>
-
-      {
-        JSON.stringify(list)
-      }
+      <fieldset>
+        <legend>Input Form</legend>
+          <h1>Please enter your input</h1>
+          <form onSubmit={inputSubmit}>
+            <input type="text" onChange={(e) => setInput(e.target.value)} value={input}/>
+            <button>Add</button>
+          </form>
+      </fieldset>
+      
+      <fieldset >
+        <legend>Array</legend>
+        {
+          JSON.stringify(list)
+        }
+      </fieldset>
 
     <List list={list}/>
     </>
